@@ -10,7 +10,7 @@ Vue.prototype.$api = api
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI,{size: 'samll'})
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
