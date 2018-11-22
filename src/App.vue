@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  	<bar></bar>
   	<el-container>
 		  <el-header>
 		  	<el-row>
@@ -47,7 +48,9 @@
 			    </el-menu>
 		    </el-aside>
 		    <el-main>
-		    	<router-view></router-view>
+		    	<transition mode="out-in" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOutLeft">
+					  <router-view></router-view>
+					</transition>
 		    </el-main>
 		  </el-container>
 		</el-container>
@@ -56,8 +59,10 @@
 </template>
 
 <script>
+import Bar from './components/bar'
 export default {
   name: 'App',
+  components: { Bar },
 }
 </script>
 <style lang="scss">

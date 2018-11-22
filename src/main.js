@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import api from './api'
+import './style/animate.css'
 Vue.prototype.$api = api
 
 import ElementUI from 'element-ui';
